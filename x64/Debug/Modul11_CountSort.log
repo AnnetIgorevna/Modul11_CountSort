@@ -1,3 +1,5 @@
 ﻿  main.cpp
-D:\Разработчик C++\C++\SF\Modul11_CountSort\main.cpp(50,40): warning C4018: <: несоответствие типов со знаком и без знака
-  Modul11_CountSort.vcxproj -> D:\Разработчик C++\C++\SF\Modul11_CountSort\x64\Debug\Modul11_CountSort.exe
+D:\SF\Modul11_CountSort\main.cpp(11,21): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\SF\Modul11_CountSort\main.cpp(14,25): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+D:\SF\Modul11_CountSort\main.cpp(33,43): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  Modul11_CountSort.vcxproj -> D:\SF\Modul11_CountSort\x64\Debug\Modul11_CountSort.exe

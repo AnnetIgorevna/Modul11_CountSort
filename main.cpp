@@ -1,13 +1,13 @@
 #include<iostream>
 using namespace std;
 
-void display(int* arr, int n) {
+void display(size_t* arr, int n) {
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
     cout << endl;
 }
 
-int getMax(int* arr, int n) {
+int getMax(size_t* arr, int n) {
     int max = arr[0];
     for (int i = 1; i < n; i++) {
         if (arr[i] > max)
@@ -17,10 +17,10 @@ int getMax(int* arr, int n) {
     return max; //максимальный элемент массива
 }
 
-void countSort(int* arr, int n) {
+void countSort(size_t* arr, int n) {
     int* output = new int[n]; // выделяем память под временный массив
     int max = getMax(arr, n); // находим максимальный элемент массива
-    int* count = new int[max + 1]; //выделяем память под массив частот
+    size_t* count = new size_t[max + 1]; //выделяем память под массив частот
 
     for (int i = 0; i < max + 1; i++)
         count[i] = 0; //инициализируем массив частот нулями
@@ -48,7 +48,7 @@ void countSort(int* arr, int n) {
 }
 
 int main() {
-    int arr[] = { 1,3,1,1,3,4,3,4,3,4,10,12 };
+    size_t arr[] = { 1,3,1,1,3,4,3,4,3,4,10,12 };
     int n = sizeof(arr) / sizeof(arr[0]);
     cout << "Array before Sorting: ";
     display(arr, n);
